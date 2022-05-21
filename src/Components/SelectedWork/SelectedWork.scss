@@ -1,0 +1,24 @@
+.SelectedWork-Container{
+.SelectedWorkParagraph-Container{
+display: flex;
+justify-content: flex-end;
+align-items: center;
+.SelectedWork-Text{
+text-align: end;
+max-width: 60%;
+border-right: 2px solid #ffffff;
+padding: 1em;
+.SelectedWork-Text-Specific{
+line-height: 20.35px;}
+}
+}
+}
+.Selector-De-Imagenes-Content{
+    .grid-content-selected {
+        &.left{
+           .Texto-boton-SelextedWork{
+               width:72% ;
+           }
+        }
+    }
+}

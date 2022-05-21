@@ -28,11 +28,12 @@ export const Menu = styled.div`
   left: ${({ click }) => (click ? "0px" : "-100%")};
   transition: 0.5s all ease-in;
   height: 100%;
+  z-index: 121;
 `;
 
 export const MenuItem = styled.p`
   font-family: "Montserrat", sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 500;
   line-height: 18px;
   padding: 12px 0 12px 25px;
