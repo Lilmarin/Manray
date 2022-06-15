@@ -1,11 +1,13 @@
 import React from "react";
 import {
   Montserrat500white14,
+  Montserrat500white1422,
   Montserrat600white22,
-  Montserrat800white48,
+  Montserrat800white4822,
 } from "../General.elements";
 import {
   BotomTextsNextLevel,
+  Flecha,
   ManrayLogotype,
   SiguienteNivelContainer,
   SiguienteNivelContenido,
@@ -20,12 +22,11 @@ const SiguienteNivel = () => {
       <SiguienteNivelContainer>
         <SiguienteNivelContenido>
           <WeUnderstand>
-            <Montserrat800white48
-              style={{ marginLeft: "33px", marginBottom: ".5em" }}
-            >
+            <Montserrat800white4822>
               Entendemos tu idea y la llevamos al siguiente
-              <TextSpanStrock>NIVEL</TextSpanStrock>
-            </Montserrat800white48>
+              <TextSpanStrock className="CustomText">NIVEL</TextSpanStrock>
+            </Montserrat800white4822>
+
             <hr style={{ marginTop: "10px" }} />
             <BotomTextsNextLevel>
               <div>
@@ -43,24 +44,18 @@ const SiguienteNivel = () => {
                   Conoce nuestro trabajo
                 </Montserrat500white14>
               </div>
-              <div>
-                <Montserrat500white14
-                  style={{
-                    lineHeight: "19px",
-                    fontSize: "13px",
-                    marginLeft: "10px",
-                    maxWidth: "66%",
-                  }}
-                >
+              <div style={{ position: "relative" }}>
+                <Montserrat500white1422>
                   Nos especializamos en la producción de comerciales, videos
                   corporativos, cortometrajes, live streaming. Expertos en
                   marketing político.
-                </Montserrat500white14>
+                </Montserrat500white1422>
+                <Flecha />
               </div>
             </BotomTextsNextLevel>
           </WeUnderstand>
           <ManrayLogotype>
-            <img src={ManrayLogo} alt="Manray" />
+            <img className="Next-Level-Gift" src={ManrayLogo} alt="Manray" />
           </ManrayLogotype>
         </SiguienteNivelContenido>
       </SiguienteNivelContainer>

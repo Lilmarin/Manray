@@ -16,9 +16,29 @@ export const SelectedWorkContainer = styled.div`
   padding: 3em 0;
   display: grid;
   grid-template-columns: 61% 39%;
+  @media (max-width: 1100px) {
+    padding: 3em 1em 1.5em 0em;
+    grid-template-columns: 100%;
+  }
 `;
+export const SelectedWorkNew = styled.div`
+  text-align: end;
+  max-width: 60%;
+  border-right: 2px solid #ffffff;
+  padding: 1em;
+  @media (max-width: 1100px) {
+    max-width: 80%;
+    padding: 0.1em 0.5em 0.1em;
+    margin: 1.5em 0 0 0;
+  }
+`;
+
 export const SelectedWorkTitle = styled.div`
   width: 100%;
+  @media (max-width: 1100px) {
+    width: 94%;
+    margin-left: 6%;
+  }
 `;
 
 export const SelectedWorkParagraph = styled.div`
@@ -28,6 +48,10 @@ export const SelectedWorkParagraph = styled.div`
 export const SelectedWorkImagenes = styled.div`
   width: 100%;
   min-height: 100vh;
+  @media (max-width: 1100px) {
+    min-height: auto;
+    width: 96%;
+  }
 `;
 
 export const ImagenUnoSelected = styled.div`
@@ -41,6 +65,11 @@ export const ImagenUnoSelected = styled.div`
   &:hover {
     background-image: url(${ImgCatGif});
   }
+  @media (max-width: 1100px) {
+    width: 65%;
+    margin: 10px auto;
+    min-height: 142px;
+  }
 `;
 
 export const GridImageneS = styled.div`
@@ -50,6 +79,10 @@ export const GridImageneS = styled.div`
   display: grid;
   grid-template-columns: 54% 43%;
   grid-gap: 3%;
+  @media (max-width: 1100px) {
+    width: 95%;
+    grid-template-columns: 57% 40%;
+  }
 `;
 
 export const ImagendosSelected = styled.div`
@@ -62,6 +95,10 @@ export const ImagendosSelected = styled.div`
   background-size: cover;
   &:hover {
     background-image: url(${OnceUponaTimegif});
+  }
+  @media (max-width: 1100px) {
+    margin-bottom: 10px;
+    min-height: 160px;
   }
 `;
 
@@ -76,6 +113,10 @@ export const ImagentresSelected = styled.div`
   &:hover {
     background-image: url(${Manray_SelectedWork_Chefsgift});
   }
+  @media (max-width: 1100px) {
+    margin-bottom: 10px;
+    min-height: 140px;
+  }
 `;
 
 export const TextBottomSelectedWork = styled.div`
@@ -83,6 +124,10 @@ export const TextBottomSelectedWork = styled.div`
   border-left: 2px solid #ffffff;
   padding: 1em;
   margin-top: 4em;
+  @media (max-width: 1100px) {
+    margin-top: 2em;
+    padding: 0.1em 0 0.1em 1em;
+  }
 `;
 
 export const ImagencuatroSelected = styled.div`
@@ -95,6 +140,10 @@ export const ImagencuatroSelected = styled.div`
   background-size: cover;
   &:hover {
     background-image: url(${Manray_SelectedWork_TrailerProditiogift});
+  }
+  @media (max-width: 1100px) {
+    margin-bottom: 10px;
+    min-height: 140px;
   }
 `;
 
@@ -109,6 +158,10 @@ export const ImagencincoSelected = styled.div`
   &:hover {
     background-image: url(${Manray_SelectedWork_TeporacasSierra2022gift});
   }
+  @media (max-width: 1100px) {
+    margin-bottom: 10px;
+    min-height: 140px;
+  }
 `;
 
 export const ImagenseisSelected = styled.div`
@@ -120,5 +173,8 @@ export const ImagenseisSelected = styled.div`
   background-size: cover;
   &:hover {
     background-image: url(${Manray_SelectedWork_AhChihuahuaTurismogif});
+  }
+  @media (max-width: 1100px) {
+    min-height: 100px;
   }
 `;

@@ -1,7 +1,7 @@
 import React from "react";
 import {
   Montserrat500white14,
-  Montserrat700white121,
+  Montserrat700white12122,
   Montserrat400white16,
   Montserrat900white88,
   StrokedText,
@@ -18,18 +18,22 @@ import {
   SelectedWorkImagenes,
   SelectedWorkParagraph,
   SelectedWorkTitle,
+  SelectedWorkNew,
   TextBottomSelectedWork,
 } from "./SelectedWork.elements";
 import "./SelectedWork.scss";
 
-const SelectedWork = () => {
+const SelectedWork = ({ selectedworkRef }) => {
   return (
     <>
-      <SelectedWorkContainer className="SelectedWork-Container">
+      <SelectedWorkContainer
+        ref={selectedworkRef}
+        className="SelectedWork-Container"
+      >
         <SelectedWorkTitle>
-          <Montserrat700white121>Selected</Montserrat700white121>
+          <Montserrat700white12122>Selected</Montserrat700white12122>
           <svg
-            width="490"
+            width="67%"
             height="3"
             viewBox="0 0 490 3"
             fill="none"
@@ -48,14 +52,14 @@ const SelectedWork = () => {
           </Montserrat900white88>
         </SelectedWorkTitle>
         <SelectedWorkParagraph className="SelectedWorkParagraph-Container">
-          <div className="SelectedWork-Text">
+          <SelectedWorkNew>
             <Montserrat500white14 className="SelectedWork-Text-Specific">
               Nuestro propósito encontrar a través de la experimentación nuevas
               formas de generar imágenes en movimiento que logren transmitir el
               mensaje que necesitas comunicar de la manera más eficiente y
               creativa posible.
             </Montserrat500white14>
-          </div>
+          </SelectedWorkNew>
         </SelectedWorkParagraph>
       </SelectedWorkContainer>
       <SelectedWorkImagenes className="Selector-De-Imagenes-Content">

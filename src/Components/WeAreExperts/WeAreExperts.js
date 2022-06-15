@@ -4,7 +4,7 @@ import {
   Montserrat400white16,
   Montserrat700white60,
   EnlaceBtnContainer,
-  Montserrat500white14,
+  Montserrat500white1433,
 } from "../General.elements";
 import {
   ExpertGrid,
@@ -22,7 +22,7 @@ const WeAreExperts = () => {
           <GridExpertLeft>
             <Montserrat700white60>SOLUCIONES VISUALES</Montserrat700white60>
             <svg
-              width="495"
+              width="65%"
               height="2"
               viewBox="0 0 495 2"
               fill="none"
@@ -30,6 +30,7 @@ const WeAreExperts = () => {
             >
               <path d="M0.928223 0.717285H494.06" stroke="white" />
             </svg>
+
             <Montserrat400white16
               style={{ textTransform: "uppercase", fontWeight: "600" }}
             >
@@ -40,17 +41,11 @@ const WeAreExperts = () => {
             </EnlaceBtnContainer>
           </GridExpertLeft>
           <GridExpertRight>
-            <Montserrat500white14
-              style={{
-                fontSize: "16px",
-                lineHeight: "23.3px",
-                maxWidth: "95%",
-              }}
-            >
+            <Montserrat500white1433>
               Comunicar lo que necesitas de la forma más creativa posible
               estableciendo los tiempos y las formas que más te funcionen es
               nuestra prioridad.
-            </Montserrat500white14>
+            </Montserrat500white1433>
           </GridExpertRight>
         </ExpertGrid>
       </ExpertsContainer>

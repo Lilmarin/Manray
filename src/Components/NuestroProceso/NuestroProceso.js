@@ -13,12 +13,15 @@ import {
 import Proceso from "../../img/May/Proceso.png";
 import ProcesoMobile from "../../img/May/ProcesoMobile.png";
 
-const NuestroProceso = () => {
+const NuestroProceso = ({ nuestroprocesoRef }) => {
   var ancho = window.screen.width;
   return (
     <>
       <ContainerNoventa>
-        <ContainerNoventa style={{ margin: "0 auto 0 0" }}>
+        <ContainerNoventa
+          ref={nuestroprocesoRef}
+          style={{ margin: "0 auto 0 0" }}
+        >
           <TitleWithBorder>
             <Montserrat600white138>Nuestro</Montserrat600white138>
           </TitleWithBorder>

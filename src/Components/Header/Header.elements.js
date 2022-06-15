@@ -15,6 +15,9 @@ export const HeaderContainer = styled.div`
   &:hover {
     background-image: url(${ImgGif});
   }
+  @media (max-width: 600px) {
+    min-height: 30vh;
+  }
 `;
 
 export const TextTop = styled.div`
@@ -23,4 +26,7 @@ export const TextTop = styled.div`
   right: 3.5%;
   text-align: right;
   align-items: right;
+  @media (max-width: 1100px) {
+    display: none;
+  }
 `;

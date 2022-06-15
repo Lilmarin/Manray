@@ -7,10 +7,11 @@ import {
   NavBarWrapper,
   StyledLogotipe,
 } from "./Navbar.elements";
-import logotipo from "../../img/May/Manray_Logotipo_Navbar.png";
+import logotipo from "../../img/May/Manray_Logotipo_Header.png";
 import "./NavBar.scss";
+import { NavLink } from "react-router-dom";
 
-const NavBar = () => {
+const NavBar = (props) => {
   const [click, setClick] = useState(false);
 
   const ChangeClick = () => {
@@ -19,10 +20,12 @@ const NavBar = () => {
   };
   return (
     <>
-      <NavBarContainer className="NavBar-Component">
+      <NavBarContainer click={click} className="NavBar-Component">
         <NavBarWrapper className="NavBar-Wrapper">
-          <StyledLogotipe>
-            <img className="NavBar-Logotipo" src={logotipo} alt="Manray" />
+          <StyledLogotipe click={click}>
+            <NavLink to="/">
+              <img className="NavBar-Logotipo" src={logotipo} alt="Manray" />
+            </NavLink>
           </StyledLogotipe>
           <IconLogoHamburger click={click} onClick={() => ChangeClick()}>
             <svg
@@ -38,18 +41,84 @@ const NavBar = () => {
             </svg>
           </IconLogoHamburger>
           <Menu click={click}>
-            <MenuItem onClick={() => ChangeClick()}>Home</MenuItem>
-            <MenuItem onClick={() => ChangeClick()}>Selected work</MenuItem>
-            <MenuItem onClick={() => ChangeClick()}>Spot comerciales</MenuItem>
-            <MenuItem onClick={() => ChangeClick()}>
-              Videos corporativos
-            </MenuItem>
-            <MenuItem onClick={() => ChangeClick()}>Podcast</MenuItem>
-            <MenuItem onClick={() => ChangeClick()}>Animación 2D</MenuItem>
-            <MenuItem onClick={() => ChangeClick()}>Videos musicales</MenuItem>
-            <MenuItem onClick={() => ChangeClick()}>Nuestro proceso </MenuItem>
-            <MenuItem onClick={() => ChangeClick()}>Contactanos</MenuItem>
+            <NavLink to="/">
+              <MenuItem onClick={() => ChangeClick()}>Home</MenuItem>
+            </NavLink>
+            <NavLink
+              to=""
+              onClick={() => {
+                props.executeScroll(props.selectedworkRef);
+              }}
+            >
+              <MenuItem onClick={() => ChangeClick()}>Selected work</MenuItem>
+            </NavLink>
+            <NavLink
+              to=""
+              onClick={() => {
+                props.executeScroll(props.spotscomercialesRef);
+              }}
+            >
+              <MenuItem onClick={() => ChangeClick()}>
+                Spot comerciales
+              </MenuItem>
+            </NavLink>
+            <NavLink
+              to=""
+              onClick={() => {
+                props.executeScroll(props.videoscorporativosRef);
+              }}
+            >
+              <MenuItem onClick={() => ChangeClick()}>
+                Videos corporativos
+              </MenuItem>
+            </NavLink>
+            <NavLink
+              to=""
+              onClick={() => {
+                props.executeScroll(props.podcastRef);
+              }}
+            >
+              <MenuItem onClick={() => ChangeClick()}>Podcast</MenuItem>
+            </NavLink>
+            <NavLink
+              to=""
+              onClick={() => {
+                props.executeScroll(props.animacionRef);
+              }}
+            >
+              {" "}
+              <MenuItem onClick={() => ChangeClick()}>Animación 2D</MenuItem>
+            </NavLink>
+            <NavLink
+              to=""
+              onClick={() => {
+                props.executeScroll(props.videosmusicalesRef);
+              }}
+            >
+              <MenuItem onClick={() => ChangeClick()}>
+                Videos musicales
+              </MenuItem>
+            </NavLink>
 
+            <NavLink
+              to=""
+              onClick={() => {
+                props.executeScroll(props.nuestroprocesoRef);
+              }}
+            >
+              <MenuItem onClick={() => ChangeClick()}>
+                Nuestro proceso{" "}
+              </MenuItem>
+            </NavLink>
+
+            <NavLink
+              to=""
+              onClick={() => {
+                props.executeScroll(props.contactanosRef);
+              }}
+            >
+              <MenuItem onClick={() => ChangeClick()}>Contactanos</MenuItem>
+            </NavLink>
             <MenuItem onClick={() => ChangeClick()}>
               <svg
                 width="45"

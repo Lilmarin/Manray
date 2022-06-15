@@ -1,6 +1,7 @@
 import React from "react";
 import {
-  Montserrat500white14,
+  Montserrat500white14OurClients,
+  Montserrat500white14OurClients2,
   Montserrat900white96,
   StrokedText,
 } from "../General.elements";
@@ -22,15 +23,10 @@ const NuestrosClientes = () => {
             <StrokedText>NUESTROS CLIENTES</StrokedText>
           </Montserrat900white96>
           <ParagraphContentClients>
-            <Montserrat500white14
-              style={{
-                lineHeight: "146%",
-                fontSize: "15px",
-              }}
-            >
+            <Montserrat500white14OurClients>
               Llevamos mas de 8 años generando una conexión entre tu proyectos y
               tu audiencias, nuestros clientes nos respaldan.
-            </Montserrat500white14>
+            </Montserrat500white14OurClients>
           </ParagraphContentClients>
         </TitleContentClients>
         <GridImageClients>
@@ -40,6 +36,10 @@ const NuestrosClientes = () => {
             imgMinHeight="80px"
           />
         </GridImageClients>
+        <Montserrat500white14OurClients2>
+          Llevamos mas de 8 años generando una conexión entre tu proyectos y tu
+          audiencias, nuestros clientes nos respaldan.
+        </Montserrat500white14OurClients2>
       </NuestrosClientesContainer>
     </>
   );

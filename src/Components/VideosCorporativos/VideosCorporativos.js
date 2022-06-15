@@ -24,10 +24,10 @@ import Manray_VideosCorporativos_SanFranciscoCountryClubgif from "../../img/May/
 import Manray_VideosCorporativos_Vivanzajpg from "../../img/May/Manray_VideosCorporativos_Vivanza.jpg";
 import Manray_VideosCorporativos_Vivanzagif from "../../img/May/Manray_VideosCorporativos_Vivanza.gif";
 
-const VideosCorporativos = () => {
+const VideosCorporativos = ({ videoscorporativosRef }) => {
   return (
     <>
-      <ContainerNoventa>
+      <ContainerNoventa ref={videoscorporativosRef}>
         <VideosCorporativosTitle>
           <Montserrat800white114>VIDEOS</Montserrat800white114>
           <ParagraphVideosText>
@@ -43,13 +43,18 @@ const VideosCorporativos = () => {
               urlGif={Manray_VideosCorporativos_Tecategif}
               minHeightSpecific={"417px"}
               widthSpecific={"100%"}
+              marginImagenSpots={"30px 0 0 auto"}
+              marginImagenSpotsMobile={"10px 0 0 auto"}
+              minHeightSpecificMobile={"132px"}
             />
             <ImagenSpots
               urlJpg={Manray_VideosCorporativos_GrupoDentaljpg}
               urlGif={Manray_VideosCorporativos_GrupoDentalgif}
               minHeightSpecific={"247px"}
               widthSpecific={"78%"}
-              style={{ margin: "29px 0 0 auto" }}
+              marginImagenSpots={"0px 0 0 auto"}
+              marginImagenSpotsMobile={"10px 0 0 auto"}
+              minHeightSpecificMobile={"90px"}
             />
             <VideoCorpTextLeft>
               <Montserrat500white14>
@@ -64,21 +69,27 @@ const VideosCorporativos = () => {
               urlGif={Manray_VideosCorporativos_JaredCorporativogif}
               minHeightSpecific={"329px"}
               widthSpecific={"100%"}
-              style={{ margin: "0 0 29px auto" }}
+              marginImagenSpots={"0 0 29px auto"}
+              marginImagenSpotsMobile={"0px 0 0 auto"}
+              minHeightSpecificMobile={"90px"}
             />
             <ImagenSpots
               urlJpg={Manray_VideosCorporativos_Vivanzajpg}
               urlGif={Manray_VideosCorporativos_Vivanzagif}
               minHeightSpecific={"247px"}
               widthSpecific={"100%"}
-              style={{ margin: "0 0 29px auto" }}
+              marginImagenSpots={"0 0 29px auto"}
+              marginImagenSpotsMobile={"10px 0 0 auto"}
+              minHeightSpecificMobile={"90px"}
             />
             <ImagenSpots
               urlJpg={Manray_VideosCorporativos_SanFranciscoCountryClubjpg}
               urlGif={Manray_VideosCorporativos_SanFranciscoCountryClubgif}
               minHeightSpecific={"329px"}
               widthSpecific={"100%"}
-              style={{ margin: "0 0 29px auto" }}
+              marginImagenSpots={"0 0 29px auto"}
+              marginImagenSpotsMobile={"10px 0 0 auto"}
+              minHeightSpecificMobile={"110px"}
             />
           </div>
         </GridVideosCorporativos>

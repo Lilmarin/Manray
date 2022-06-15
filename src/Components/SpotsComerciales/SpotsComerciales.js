@@ -8,6 +8,7 @@ import {
 import {
   DivSpotsContainer,
   GridSpotsComerciales,
+  SpanComerciales,
   SpotsComercialesContainer,
   TitleSpots,
 } from "./SpotsComerciales.elements";
@@ -19,24 +20,18 @@ import Manray_SpotComerciales_TeporacasCUUjpg from "../../img/May/Manray_SpotCom
 import Manray_SpotComerciales_TeporacasCUUgif from "../../img/May/Manray_SpotComerciales_TeporacasCUU.gif";
 import Manray_SpotComerciales_Bankaoolpng from "../../img/May/Manray_SpotComerciales_Bankaool.png";
 import Manray_SpotComerciales_Bankaoolgif from "../../img/May/Manray_SpotComerciales_Bankaool.gif";
+import Manray_SpotComercial_Nascar from "../../img/May/Manray_SpotComercial_Nascar.png";
 
-const SpotsComerciales = () => {
+const SpotsComerciales = ({ spotscomercialesRef }) => {
   return (
     <>
-      <SpotsComercialesContainer>
+      <SpotsComercialesContainer ref={spotscomercialesRef}>
         <TitleSpots>
           <Montserrat900white96>
             <StrokedText style={{ textTransform: "uppercase" }}>
               Spots
               <br />
-              <span
-                style={{
-                  borderTop: "2px solid #ffffff",
-                  lineHeight: "140px",
-                }}
-              >
-                Comerciales
-              </span>
+              <SpanComerciales>Comerciales</SpanComerciales>
             </StrokedText>
           </Montserrat900white96>
         </TitleSpots>
@@ -46,15 +41,27 @@ const SpotsComerciales = () => {
               urlJpg={SpotsComercialesPanicpng}
               urlGif={SpotsComercialesPanicgif}
               minHeightSpecific={"417px"}
+              minHeightSpecificMobile={"130px"}
               widthSpecific={"100%"}
             ></ImagenSpots>
 
             <ImagenSpots
-              style={{ margin: "30px 0 0 auto" }}
               urlJpg={Manray_SpotComerciales_ISADjpg}
               urlGif={Manray_SpotComerciales_ISADgif}
               minHeightSpecific={"247px"}
               widthSpecific={"79%"}
+              marginImagenSpots={"30px 0 0 auto"}
+              marginImagenSpotsMobile={"10px 0 0 auto"}
+              minHeightSpecificMobile={"85px"}
+            />
+            <ImagenSpots
+              urlJpg={Manray_SpotComercial_Nascar}
+              urlGif={Manray_SpotComerciales_ISADgif}
+              minHeightSpecific={"286px"}
+              widthSpecific={"100%"}
+              marginImagenSpots={"30px 0 0 auto"}
+              marginImagenSpotsMobile={"10px 0 0 auto"}
+              minHeightSpecificMobile={"100px"}
             />
           </div>
           <div>
@@ -63,13 +70,16 @@ const SpotsComerciales = () => {
               urlGif={Manray_SpotComerciales_TeporacasCUUgif}
               minHeightSpecific={"247px"}
               widthSpecific={"100%"}
+              minHeightSpecificMobile={"85px"}
             />
             <ImagenSpots
-              style={{ margin: "30px 0 0 auto" }}
+              marginImagenSpots={"30px 0 0 auto"}
               urlJpg={Manray_SpotComerciales_Bankaoolpng}
               urlGif={Manray_SpotComerciales_Bankaoolgif}
               minHeightSpecific={"334px"}
               widthSpecific={"100%"}
+              marginImagenSpotsMobile={"10px 0 0 auto"}
+              minHeightSpecificMobile={"100px"}
             />
             <DivSpotsContainer>
               <Montserrat400white16>

@@ -1,0 +1,26 @@
+.SelectedWork-Container .SelectedWorkParagraph-Container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.SelectedWork-Container .SelectedWorkParagraph-Container .SelectedWork-Text-Specific {
+  line-height: 20.35px;
+}
+
+.Selector-De-Imagenes-Content .grid-content-selected.left .Texto-boton-SelextedWork {
+  width: 72%;
+}
+
+@media (max-width: 1100px) {
+  .Selector-De-Imagenes-Content .grid-content-selected.left .Texto-boton-SelextedWork {
+    width: 96%;
+  }
+}
+/*# sourceMappingURL=SelectedWork.css.map */

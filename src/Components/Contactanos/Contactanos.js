@@ -1,39 +1,39 @@
 import React from "react";
+import Formulario from "../Formulario/Formulario";
 import {
   ContainerNoventa,
-  Montserrat600white145,
+  Montserrat600white14522,
   Montserrat600white16,
-  Montserrat600white60,
+  Montserrat600white6055,
 } from "../General.elements";
 import {
   ContactanosContainer,
+  Contactanostitle1,
   Containernoventaysiete,
   Containernoventaytres,
   ContainerTextModal,
   FormularioContainer,
 } from "./Contactanos.elements";
 
-const Contactanos = () => {
+const Contactanos = ({ contactanosRef }) => {
   return (
     <>
-      <ContactanosContainer>
-        <ContainerNoventa style={{ borderBottom: "2px solid #ffffff" }}>
+      <ContactanosContainer ref={contactanosRef}>
+        <ContainerNoventa style={{ borderBottom: "1.5px solid #ffffff" }}>
           <Containernoventaytres>
-            <div
-              style={{ borderBottom: "2px solid #ffffff", marginBottom: "5em" }}
-            >
-              <Montserrat600white145>Contáctanos</Montserrat600white145>
-            </div>
+            <Contactanostitle1>
+              <Montserrat600white14522>Contáctanos</Montserrat600white14522>
+            </Contactanostitle1>
             <Containernoventaysiete>
               <ContainerTextModal>
-                <Montserrat600white60 style={{ textTransform: "uppercase" }}>
+                <Montserrat600white6055 style={{ textTransform: "uppercase" }}>
                   Dejanos ayudarte a plasmar tu idea en audiovisual
-                </Montserrat600white60>
+                </Montserrat600white6055>
                 <Montserrat600white16 style={{ marginTop: ".5em" }}>
                   ¿ESTAS LISTO?
                 </Montserrat600white16>
                 <FormularioContainer>
-                  <h1>FORMULARIO</h1>
+                  <Formulario />
                 </FormularioContainer>
               </ContainerTextModal>
             </Containernoventaysiete>
