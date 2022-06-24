@@ -1,7 +1,7 @@
 import React from "react";
 import {
   Montserrat600white22two,
-  Montserrat900white88,
+  Montserrat900white8866,
 } from "../Components/General.elements";
 import {
   ButtonWhiteThanks,
@@ -19,6 +19,9 @@ import ManrayLogo from "../img/May/ManrayLogoGiratorio.gif";
 import Gracias_Image from "../img/May/Gracias_Image.png";
 
 const Gracias = () => {
+  const queryParams = new URLSearchParams(window.location.search);
+  const name = queryParams.get("name");
+
   return (
     <GraciasContainer>
       <LeftContainerThanks>
@@ -27,13 +30,13 @@ const Gracias = () => {
           <GraciasIMGGift src={ManrayLogo} alt="Manray" />
         </Linecontainer>
         <GraciasTitle>
-          <Montserrat900white88>
+          <Montserrat900white8866>
             ¡Gracias
             <StrokedTextYellow style={{ borderColor: "#FF9C41" }}>
               {" "}
-              Maria!
+              {name}!
             </StrokedTextYellow>
-          </Montserrat900white88>
+          </Montserrat900white8866>
         </GraciasTitle>
         <GraciasSubtitle>
           <Montserrat600white22two>

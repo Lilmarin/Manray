@@ -43,8 +43,8 @@ const VideosCorporativos = ({ videoscorporativosRef }) => {
               urlGif={Manray_VideosCorporativos_Tecategif}
               minHeightSpecific={"417px"}
               widthSpecific={"100%"}
-              marginImagenSpots={"30px 0 0 auto"}
-              marginImagenSpotsMobile={"10px 0 0 auto"}
+              marginImagenSpots={"0 0 30px auto"}
+              marginImagenSpotsMobile={" 0 0 10px auto"}
               minHeightSpecificMobile={"132px"}
             />
             <ImagenSpots

@@ -22,7 +22,6 @@ import {
   TextBottomSelectedWork,
 } from "./SelectedWork.elements";
 import "./SelectedWork.scss";
-
 const SelectedWork = ({ selectedworkRef }) => {
   return (
     <>
@@ -42,7 +41,7 @@ const SelectedWork = ({ selectedworkRef }) => {
             <path
               d="M0.5 1.45779L489.507 1.45781"
               stroke="white"
-              stroke-width="1.75515"
+              strokeWidth="1.75515"
             />
           </svg>
           <Montserrat900white88

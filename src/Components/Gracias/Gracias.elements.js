@@ -69,6 +69,11 @@ export const LeftContainerThanks = styled.div`
 
 export const GraciasTitle = styled.div`
   margin: 0.5em auto 0em;
+  display: flex;
+  text-align:center;
+  flex-direction:"column";
+  justify-content:center;
+  align-items:"center";
 `;
 
 export const GraciasSubtitle = styled.div`

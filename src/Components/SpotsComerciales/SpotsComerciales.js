@@ -21,6 +21,7 @@ import Manray_SpotComerciales_TeporacasCUUgif from "../../img/May/Manray_SpotCom
 import Manray_SpotComerciales_Bankaoolpng from "../../img/May/Manray_SpotComerciales_Bankaool.png";
 import Manray_SpotComerciales_Bankaoolgif from "../../img/May/Manray_SpotComerciales_Bankaool.gif";
 import Manray_SpotComercial_Nascar from "../../img/May/Manray_SpotComercial_Nascar.png";
+import Manray_SpotComerciales_nascargif from "../../img/May/Manray_SpotComerciales_nascargif.gif";
 
 const SpotsComerciales = ({ spotscomercialesRef }) => {
   return (
@@ -56,7 +57,7 @@ const SpotsComerciales = ({ spotscomercialesRef }) => {
             />
             <ImagenSpots
               urlJpg={Manray_SpotComercial_Nascar}
-              urlGif={Manray_SpotComerciales_ISADgif}
+              urlGif={Manray_SpotComerciales_nascargif}
               minHeightSpecific={"286px"}
               widthSpecific={"100%"}
               marginImagenSpots={"30px 0 0 auto"}

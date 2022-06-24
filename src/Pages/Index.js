@@ -1,4 +1,5 @@
 import React from "react";
+import "react-app-polyfill/stable";
 import Header from "../Components/Header/Header";
 import SiguienteNivel from "../Components/SiguienteNivel/SiguienteNivel";
 import SelectedWork from "../Components/SelectedWork/SelectedWork";

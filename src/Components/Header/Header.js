@@ -1,12 +1,17 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { Montserrat500white12 } from "../General.elements";
-import { HeaderContainer, TextTop } from "./Header.elements";
+import {
+  AbsolutLeftContainer,
+  HeaderContainer,
+  TextTop,
+} from "./Header.elements";
 
 const Header = (props) => {
   return (
     <>
       <HeaderContainer>
+        <AbsolutLeftContainer />
         <NavLink
           to=""
           onClick={() => {

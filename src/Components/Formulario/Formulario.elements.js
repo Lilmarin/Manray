@@ -18,7 +18,17 @@ export const InputComponent = styled.input`
   border: 1.5px solid #ffffff;
 `;
 
-export const InputComponentBig = styled.input`
+export const InputSubmit = styled.input`
+  box-sizing: border-box;
+  color: rgba(255, 255, 255, 0.5);
+  padding: 15px 15px 15px 15px;
+  width: 100%;
+  margin-bottom: 4%;
+  background-color: #000000;
+  border: 1.5px solid #ffffff;
+`;
+
+export const InputComponentBig = styled.textarea`
   box-sizing: border-box;
   color: rgba(255, 255, 255, 0.5);
   padding: 15px 15px 15px 35px;
@@ -50,9 +60,9 @@ export const InputIconlast = styled.img`
   width: 20px;
   height: 20px;
   left: 12px;
-  top: 45%;
+  top: 19%;
   transform: translateY(-60%);
   @media (max-width: 1100px) {
-    top: 47%;
+    top: 19%;
   }
 `;

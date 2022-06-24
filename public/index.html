@@ -7,7 +7,7 @@
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
-      content="Web site created using create-react-app"
+      content="Entendemos tu idea y la llevamos al siguiente nivel, dejanos ayudarte"
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--
@@ -30,10 +30,63 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     /> -->
+    <style>
+      .whatsapp:hover {
+        transform: translateY(-0.4em);
+      }
+      .whatsapp {
+        top: 89%;
+        right: 1.4em;
+        border-radius: 50px;
+        box-shadow: 0px 9px 28px 8px rgba(0, 0, 0, 0.05),
+          0px 6px 16px rgba(43, 30, 30, 0.08),
+          0px 3px 6px -4px rgba(0, 0, 0, 0.12);
+      }
+
+      @media (max-width: 1024px) {
+        .whatsapp {
+          top: calc(100vh - 88px);
+          right: 1.8em;
+          max-width: 55px;
+          max-height: 55px;
+        }
+      }
+    </style>
     <title>Manray</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-DXH9V5EWE1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-DXH9V5EWE1");
+    </script>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <a
+      href="https://wa.link/w8kp11"
+      class="whatsapp"
+      style="
+        line-height: 0px !important;
+        background-color: none;
+        z-index: 9999999;
+        position: fixed;
+        color: #fff;
+        border-radius: 50px;
+        text-align: center;
+      "
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <img src="%PUBLIC_URL%/WhatsappImg.png" alt="Whatsapp" />
+    </a>
+    <noscript>Necesitas habilitar javascript para ver este sitio web</noscript>
     <div id="root"></div>
     <!--
       This HTML file is a template.
@@ -45,5 +98,14 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <!-- Start of HubSpot Embed Code -->
+    <script
+      type="text/javascript"
+      id="hs-script-loader"
+      async
+      defer
+      src="//js.hs-scripts.com/21696259.js"
+    ></script>
+    <!-- End of HubSpot Embed Code -->
   </body>
 </html>
