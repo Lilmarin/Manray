@@ -221,6 +221,18 @@ export const Montserrat900white88 = styled.p`
     line-height: 1.15em;
   }
 `;
+export const Montserrat900white8866 = styled.p`
+  font-size: 65px;
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-weight: 800;
+  line-height: 101px;
+  @media (max-width: 1100px) {
+    font-size: 2.8em;
+    line-height: 1.15em;
+  }
+`;
+
 export const StrokedText = styled.span`
   -webkit-text-stroke: 2px #ffffff;
   color: transparent;
@@ -350,12 +362,13 @@ export const ImagenSpots = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   margin: ${(props) => props.marginImagenSpots};
-  &:hover {
-    background-image: url(${(props) => props.urlGif});
-  }
   @media (max-width: 1100px) {
     min-height: ${(props) => props.minHeightSpecificMobile};
     margin: ${(props) => props.marginImagenSpotsMobile};
+    background-image: url(${(props) => props.imgmobile});
+  }
+  &:hover {
+    background-image: url(${(props) => props.urlGif});
   }
 `;
 

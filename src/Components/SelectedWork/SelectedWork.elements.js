@@ -11,6 +11,12 @@ import Manray_SelectedWork_TeporacasSierra2022jpg from "../../img/May/Manray_Sel
 import Manray_SelectedWork_TeporacasSierra2022gift from "../../img/May/Manray_SelectedWork_TeporacasSierra2022.gif";
 import Manray_SelectedWork_AhChihuahuaTurismojpg from "../../img/May/Manray_SelectedWork_AhChihuahuaTurismo.jpg";
 import Manray_SelectedWork_AhChihuahuaTurismogif from "../../img/May/Manray_SelectedWork_AhChihuahuaTurismo.gif";
+import ImgSelectedMobilepng from "../../img/June/Manray_Selectedwork_Catrina_Mobile.png";
+import ImgSelectedMobile2png from "../../img/June/Manray_SelectedWork_OnceUponATime_Mobile.png";
+import ImgSelectedMobile3png from "../../img/June/Manray_SelectedWork_TrailerProditio_Mobile.png";
+import ImgSelectedMobile4png from "../../img/June/Manray_SelectedWork_Chefs_Mobile.png";
+import ImgSelectedMobile5png from "../../img/June/Manray_SelectedWork_TeporacasSierra2022_Mobile.png";
+import ImgSelectedMobile6png from "../../img/June/Manray_SelectedWork_AhChihuahuaTurismo_Mobile.png";
 
 export const SelectedWorkContainer = styled.div`
   padding: 3em 0;
@@ -62,13 +68,14 @@ export const ImagenUnoSelected = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  &:hover {
-    background-image: url(${ImgCatGif});
-  }
   @media (max-width: 1100px) {
+    background-image: url(${ImgSelectedMobilepng});
     width: 65%;
     margin: 10px auto;
     min-height: 142px;
+  }
+  &:hover {
+    background-image: url(${ImgCatGif});
   }
 `;
 
@@ -93,12 +100,13 @@ export const ImagendosSelected = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  &:hover {
-    background-image: url(${OnceUponaTimegif});
-  }
   @media (max-width: 1100px) {
+    background-image: url(${ImgSelectedMobile2png});
     margin-bottom: 10px;
     min-height: 160px;
+  }
+  &:hover {
+    background-image: url(${OnceUponaTimegif});
   }
 `;
 
@@ -110,12 +118,13 @@ export const ImagentresSelected = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  &:hover {
-    background-image: url(${Manray_SelectedWork_Chefsgift});
-  }
   @media (max-width: 1100px) {
+    background-image: url(${ImgSelectedMobile4png});
     margin-bottom: 10px;
     min-height: 140px;
+  }
+  &:hover {
+    background-image: url(${Manray_SelectedWork_Chefsgift});
   }
 `;
 
@@ -138,12 +147,13 @@ export const ImagencuatroSelected = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  &:hover {
-    background-image: url(${Manray_SelectedWork_TrailerProditiogift});
-  }
   @media (max-width: 1100px) {
+    background-image: url(${ImgSelectedMobile3png});
     margin-bottom: 10px;
     min-height: 140px;
+  }
+  &:hover {
+    background-image: url(${Manray_SelectedWork_TrailerProditiogift});
   }
 `;
 
@@ -155,12 +165,13 @@ export const ImagencincoSelected = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  &:hover {
-    background-image: url(${Manray_SelectedWork_TeporacasSierra2022gift});
-  }
   @media (max-width: 1100px) {
     margin-bottom: 10px;
+    background-image: url(${ImgSelectedMobile5png});
     min-height: 140px;
+  }
+  &:hover {
+    background-image: url(${Manray_SelectedWork_TeporacasSierra2022gift});
   }
 `;
 
@@ -171,10 +182,11 @@ export const ImagenseisSelected = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  @media (max-width: 1100px) {
+    background-image: url(${ImgSelectedMobile6png});
+    min-height: 100px;
+  }
   &:hover {
     background-image: url(${Manray_SelectedWork_AhChihuahuaTurismogif});
-  }
-  @media (max-width: 1100px) {
-    min-height: 100px;
   }
 `;

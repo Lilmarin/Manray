@@ -24,6 +24,7 @@ import Manray_PodcastYTV_NosotrasSinFiltrojpg from "../../img/May/Manray_Podcast
 import Manray_PodcastYTV_NosotrasSinFiltrogif from "../../img/May/Manray_PodcastYTV_NosotrasSinFiltro.gif";
 import Manray_PodcastYTV_DemoVasoRojojpg from "../../img/May/Manray_PodcastYTV_DemoVasoRojo.jpg";
 import Manray_PodcastYTV_DemoVasoRojogif from "../../img/May/Manray_PodcastYTV_DemoVasoRojo.gif";
+import ManrayImgPodcastMobile from "../../img/June/Manray_PodcastYTV_SazonDeChihuahua.png";
 
 const Podcast = ({ podcastRef }) => {
   return (
@@ -52,6 +53,7 @@ const Podcast = ({ podcastRef }) => {
               marginImagenSpots={"0 0 29px auto"}
               marginImagenSpotsMobile={"0 0 10px auto"}
               minHeightSpecificMobile={"90px"}
+              imgmobile={Manray_PodcastYTV_SazonDeChihuahuajpg}
             />
             <ImagenSpots
               urlJpg={Manray_PodcastYTV_CoctelDonJacintojpg}
@@ -61,6 +63,7 @@ const Podcast = ({ podcastRef }) => {
               marginImagenSpots={"0 0 29px auto"}
               marginImagenSpotsMobile={"0 0 10px auto"}
               minHeightSpecificMobile={"110px"}
+              imgmobile={ManrayImgPodcastMobile}
             />
             <ImagenSpots
               urlJpg={Manray_PodcastYTV_NosotrasSinFiltrojpg}
@@ -70,6 +73,7 @@ const Podcast = ({ podcastRef }) => {
               marginImagenSpots={"0 auto 29px 0"}
               marginImagenSpotsMobile={"0 auto 10px 0"}
               minHeightSpecificMobile={"90px"}
+              imgmobile={Manray_PodcastYTV_NosotrasSinFiltrojpg}
             />
           </div>
 
@@ -82,6 +86,7 @@ const Podcast = ({ podcastRef }) => {
               marginImagenSpots={"0 0 29px auto"}
               marginImagenSpotsMobile={"0 0 10px auto"}
               minHeightSpecificMobile={"130px"}
+              imgmobile={Manray_PodcastYTV_CoparmexLagunajpg}
             />
             <ImagenSpots
               urlJpg={Manray_PodcastYTV_DemoVasoRojojpg}
@@ -91,6 +96,7 @@ const Podcast = ({ podcastRef }) => {
               marginImagenSpots={"0 auto 29px 0"}
               marginImagenSpotsMobile={"0 auto 10px 0"}
               minHeightSpecificMobile={"80px"}
+              imgmobile={Manray_PodcastYTV_DemoVasoRojojpg}
             />
             <TextLastPodcast>
               <Montserrat500white14 style={{ lineHeight: "20.36px" }}>

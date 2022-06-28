@@ -13,6 +13,7 @@ import {
 } from "./Videosmusicales.elements";
 import Manray_VideosMuscales_Cahpojpg from "../../img/May/Manray_VideosMuscales_Cahpo.jpg";
 import Manray_VideosMuscales_Cahpogif from "../../img/May/Manray_VideosMuscales_Cahpo.gif";
+import ManrayvideosmusicalesMobile from "../../img/June/Manray_VideosMuscales_Cahpo.png";
 
 const Videosmusicales = ({ videosmusicalesRef }) => {
   return (
@@ -36,6 +37,7 @@ const Videosmusicales = ({ videosmusicalesRef }) => {
               marginImagenSpots={"0 0 29px auto"}
               marginImagenSpotsMobile={"0 0 10px auto"}
               minHeightSpecificMobile={"135px"}
+              imgmobile={ManrayvideosmusicalesMobile}
             />
           </ContainerGridIndividual>
         </GridVideosMusicales>

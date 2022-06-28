@@ -3,6 +3,7 @@ import ImgJpg from "../../img/May/Manray_Header.jpg";
 import ImgGif from "../../img/May/Manray_Header.gif";
 
 export const HeaderContainer = styled.div`
+  position: relative;
   min-height: 100vh;
   width: 100%;
   top: 0;
@@ -17,6 +18,17 @@ export const HeaderContainer = styled.div`
   }
   @media (max-width: 600px) {
     min-height: 30vh;
+  }
+`;
+export const AbsolutLeftContainer = styled.div`
+  display: none;
+  @media (max-width: 1100px) {
+    display: inline;
+    background-color: yellow;
+    position: absolute;
+    min-height: 30vh;
+    background: linear-gradient(to left, transparent 0%, black 100%);
+    width: 25%;
   }
 `;
 

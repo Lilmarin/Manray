@@ -23,6 +23,11 @@ import Manray_VideosCorporativos_SanFranciscoCountryClubjpg from "../../img/May/
 import Manray_VideosCorporativos_SanFranciscoCountryClubgif from "../../img/May/Manray_VideosCorporativos_SanFranciscoCountryClub.gif";
 import Manray_VideosCorporativos_Vivanzajpg from "../../img/May/Manray_VideosCorporativos_Vivanza.jpg";
 import Manray_VideosCorporativos_Vivanzagif from "../../img/May/Manray_VideosCorporativos_Vivanza.gif";
+import ManrayCorporativosMobile from "../../img/June/Manray_VideosCorporativos_Tecat1.png";
+import ManrayCorporativosMobile2 from "../../img/June/Manray_VideosCorporativos_JaredCorporativo2.png";
+import ManrayCorporativosMobile3 from "../../img/June/Manray_VideosCorporativos_GrupoDental3.png";
+import ManrayCorporativosMobile4 from "../../img/June/Manray_VideosCorporativos_Vivanza4.png";
+import ManrayCorporativosMobile5 from "../../img/May/Manray_VideosCorporativos_SanFranciscoCountryClub.jpg";
 
 const VideosCorporativos = ({ videoscorporativosRef }) => {
   return (
@@ -43,9 +48,10 @@ const VideosCorporativos = ({ videoscorporativosRef }) => {
               urlGif={Manray_VideosCorporativos_Tecategif}
               minHeightSpecific={"417px"}
               widthSpecific={"100%"}
-              marginImagenSpots={"30px 0 0 auto"}
-              marginImagenSpotsMobile={"10px 0 0 auto"}
+              marginImagenSpots={"0 0 30px auto"}
+              marginImagenSpotsMobile={" 0 0 10px auto"}
               minHeightSpecificMobile={"132px"}
+              imgmobile={ManrayCorporativosMobile}
             />
             <ImagenSpots
               urlJpg={Manray_VideosCorporativos_GrupoDentaljpg}
@@ -55,6 +61,7 @@ const VideosCorporativos = ({ videoscorporativosRef }) => {
               marginImagenSpots={"0px 0 0 auto"}
               marginImagenSpotsMobile={"10px 0 0 auto"}
               minHeightSpecificMobile={"90px"}
+              imgmobile={ManrayCorporativosMobile3}
             />
             <VideoCorpTextLeft>
               <Montserrat500white14>
@@ -72,6 +79,7 @@ const VideosCorporativos = ({ videoscorporativosRef }) => {
               marginImagenSpots={"0 0 29px auto"}
               marginImagenSpotsMobile={"0px 0 0 auto"}
               minHeightSpecificMobile={"90px"}
+              imgmobile={ManrayCorporativosMobile2}
             />
             <ImagenSpots
               urlJpg={Manray_VideosCorporativos_Vivanzajpg}
@@ -81,6 +89,7 @@ const VideosCorporativos = ({ videoscorporativosRef }) => {
               marginImagenSpots={"0 0 29px auto"}
               marginImagenSpotsMobile={"10px 0 0 auto"}
               minHeightSpecificMobile={"90px"}
+              imgmobile={ManrayCorporativosMobile4}
             />
             <ImagenSpots
               urlJpg={Manray_VideosCorporativos_SanFranciscoCountryClubjpg}
@@ -90,6 +99,7 @@ const VideosCorporativos = ({ videoscorporativosRef }) => {
               marginImagenSpots={"0 0 29px auto"}
               marginImagenSpotsMobile={"10px 0 0 auto"}
               minHeightSpecificMobile={"110px"}
+              imgmobile={ManrayCorporativosMobile5}
             />
           </div>
         </GridVideosCorporativos>

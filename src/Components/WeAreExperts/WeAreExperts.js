@@ -3,7 +3,6 @@ import {
   ButtonWhite,
   Montserrat400white16,
   Montserrat700white60,
-  EnlaceBtnContainer,
   Montserrat500white1433,
 } from "../General.elements";
 import {
@@ -12,8 +11,9 @@ import {
   GridExpertLeft,
   GridExpertRight,
 } from "./WeAreExperts.elements";
+import { NavLink } from "react-router-dom";
 
-const WeAreExperts = () => {
+const WeAreExperts = (props) => {
   return (
     <>
       <ExpertsContainer>
@@ -36,9 +36,15 @@ const WeAreExperts = () => {
             >
               Lo que necesitas, cuéntanos sobre tu proyecto
             </Montserrat400white16>
-            <EnlaceBtnContainer>
-              <ButtonWhite>Contáctanos</ButtonWhite>
-            </EnlaceBtnContainer>
+
+            <NavLink
+              to=""
+              onClick={() => {
+                props.executeScroll(props.contactanosRef);
+              }}
+            >
+              <ButtonWhite>Contáctanos</ButtonWhite>{" "}
+            </NavLink>
           </GridExpertLeft>
           <GridExpertRight>
             <Montserrat500white1433>

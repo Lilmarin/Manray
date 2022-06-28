@@ -41,3 +41,19 @@ p{
     margin-left: 10px;
   } 
 }
+
+.input-success{
+  border: 2px solid;
+}
+
+.input-false{ border-color:  red !important;
+  border: 2px solid;}
+
+  
+
+.Enviar{
+background-color:#ff9c41 !important ;
+border-radius: #000000 3px !important;
+color:#000000 !important;
+font-weight: 800 !important;
+  }

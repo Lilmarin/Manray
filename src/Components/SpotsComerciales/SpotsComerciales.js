@@ -21,6 +21,12 @@ import Manray_SpotComerciales_TeporacasCUUgif from "../../img/May/Manray_SpotCom
 import Manray_SpotComerciales_Bankaoolpng from "../../img/May/Manray_SpotComerciales_Bankaool.png";
 import Manray_SpotComerciales_Bankaoolgif from "../../img/May/Manray_SpotComerciales_Bankaool.gif";
 import Manray_SpotComercial_Nascar from "../../img/May/Manray_SpotComercial_Nascar.png";
+import Manray_SpotComerciales_nascargif from "../../img/May/Manray_SpotComerciales_nascargif.gif";
+import ManraySpotsMobileImage1 from "../../img/June/Manray_SpotComerciales_PanicBotanic1.png";
+import ManraySpotsMobileImage2 from "../../img/June/Manray_SpotComerciales_TeporacasCUU2.png";
+import ManraySpotsMobileImage3 from "../../img/June/Manray_SpotComerciales_ISAD4.png";
+import ManraySpotsMobileImage4 from "../../img/June/Manray_SpotComerciales_Bankaool4.png";
+import ManraySpotsMobileImage5 from "../../img/June/Manray_SpotComercial_Nascar5.png";
 
 const SpotsComerciales = ({ spotscomercialesRef }) => {
   return (
@@ -43,6 +49,7 @@ const SpotsComerciales = ({ spotscomercialesRef }) => {
               minHeightSpecific={"417px"}
               minHeightSpecificMobile={"130px"}
               widthSpecific={"100%"}
+              imgmobile={ManraySpotsMobileImage1}
             ></ImagenSpots>
 
             <ImagenSpots
@@ -53,15 +60,17 @@ const SpotsComerciales = ({ spotscomercialesRef }) => {
               marginImagenSpots={"30px 0 0 auto"}
               marginImagenSpotsMobile={"10px 0 0 auto"}
               minHeightSpecificMobile={"85px"}
+              imgmobile={ManraySpotsMobileImage3}
             />
             <ImagenSpots
               urlJpg={Manray_SpotComercial_Nascar}
-              urlGif={Manray_SpotComerciales_ISADgif}
+              urlGif={Manray_SpotComerciales_nascargif}
               minHeightSpecific={"286px"}
               widthSpecific={"100%"}
               marginImagenSpots={"30px 0 0 auto"}
               marginImagenSpotsMobile={"10px 0 0 auto"}
               minHeightSpecificMobile={"100px"}
+              imgmobile={ManraySpotsMobileImage5}
             />
           </div>
           <div>
@@ -71,6 +80,7 @@ const SpotsComerciales = ({ spotscomercialesRef }) => {
               minHeightSpecific={"247px"}
               widthSpecific={"100%"}
               minHeightSpecificMobile={"85px"}
+              imgmobile={ManraySpotsMobileImage2}
             />
             <ImagenSpots
               marginImagenSpots={"30px 0 0 auto"}
@@ -80,6 +90,7 @@ const SpotsComerciales = ({ spotscomercialesRef }) => {
               widthSpecific={"100%"}
               marginImagenSpotsMobile={"10px 0 0 auto"}
               minHeightSpecificMobile={"100px"}
+              imgmobile={ManraySpotsMobileImage4}
             />
             <DivSpotsContainer>
               <Montserrat400white16>

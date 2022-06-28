@@ -83,7 +83,7 @@ export const FooterTopRight = styled.div`
   width: 100%;
   min-height: 10px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-end;
 `;
 

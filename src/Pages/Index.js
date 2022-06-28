@@ -1,17 +1,38 @@
-import React from "react";
+import React, { Suspense } from "react";
+import "react-app-polyfill/stable";
 import Header from "../Components/Header/Header";
 import SiguienteNivel from "../Components/SiguienteNivel/SiguienteNivel";
-import SelectedWork from "../Components/SelectedWork/SelectedWork";
-import WeAreExperts from "../Components/WeAreExperts/WeAreExperts";
-import SpotsComerciales from "../Components/SpotsComerciales/SpotsComerciales";
-import NuestrosClientes from "../Components/NuestrosClientes/NuestrosClientes";
-import VideosCorporativos from "../Components/VideosCorporativos/VideosCorporativos";
-import Animacion2d from "../Components/Animacion2d/Animacion2d";
-import Videosmusicales from "../Components/VideosMusicales/Videosmusicales";
-import Podcast from "../Components/Podcast/Podcast";
-import NuestroProceso from "../Components/NuestroProceso/NuestroProceso";
-import Contactanos from "../Components/Contactanos/Contactanos";
 import { Alltheboxes } from "../Components/General.elements";
+import Loading from "../Components/Loading/Loading";
+
+const SelectedWork = React.lazy(() =>
+  import("../Components/SelectedWork/SelectedWork")
+);
+const WeAreExperts = React.lazy(() =>
+  import("../Components/WeAreExperts/WeAreExperts")
+);
+const SpotsComerciales = React.lazy(() =>
+  import("../Components/SpotsComerciales/SpotsComerciales")
+);
+const NuestrosClientes = React.lazy(() =>
+  import("../Components/NuestrosClientes/NuestrosClientes")
+);
+const VideosCorporativos = React.lazy(() =>
+  import("../Components/VideosCorporativos/VideosCorporativos")
+);
+const Animacion2d = React.lazy(() =>
+  import("../Components/Animacion2d/Animacion2d")
+);
+const Videosmusicales = React.lazy(() =>
+  import("../Components/VideosMusicales/Videosmusicales")
+);
+const Podcast = React.lazy(() => import("../Components/Podcast/Podcast"));
+const NuestroProceso = React.lazy(() =>
+  import("../Components/NuestroProceso/NuestroProceso")
+);
+const Contactanos = React.lazy(() =>
+  import("../Components/Contactanos/Contactanos")
+);
 
 const Index = (props) => {
   return (
@@ -20,20 +41,47 @@ const Index = (props) => {
         contactanosRef={props.contactanosRef}
         executeScroll={props.executeScroll}
       />
-      <SiguienteNivel />
+
+      <Suspense fallback={<Loading />}>
+        <SiguienteNivel />
+      </Suspense>
       <Alltheboxes>
-        <SelectedWork selectedworkRef={props.selectedworkRef} />
-        <WeAreExperts />
-        <SpotsComerciales spotscomercialesRef={props.spotscomercialesRef} />
-        <NuestrosClientes />
-        <VideosCorporativos
-          videoscorporativosRef={props.videoscorporativosRef}
-        />
-        <Animacion2d animacionRef={props.animacionRef} />
-        <Videosmusicales videosmusicalesRef={props.videosmusicalesRef} />
-        <Podcast podcastRef={props.podcastRef} />
-        <NuestroProceso nuestroprocesoRef={props.nuestroprocesoRef} />
-        <Contactanos contactanosRef={props.contactanosRef} />
+        <Suspense fallback={<Loading />}>
+          <SelectedWork selectedworkRef={props.selectedworkRef} />
+        </Suspense>
+        <Suspense fallback={<Loading />}>
+          <WeAreExperts
+            contactanosRef={props.contactanosRef}
+            executeScroll={props.executeScroll}
+          />
+        </Suspense>
+        <Suspense fallback={<Loading />}>
+          <SpotsComerciales spotscomercialesRef={props.spotscomercialesRef} />
+        </Suspense>
+        <Suspense fallback={<Loading />}>
+          <NuestrosClientes />
+        </Suspense>
+        <Suspense fallback={<Loading />}>
+          <VideosCorporativos
+            videoscorporativosRef={props.videoscorporativosRef}
+          />
+        </Suspense>
+        <Suspense fallback={<Loading />}>
+          <Animacion2d animacionRef={props.animacionRef} />
+        </Suspense>
+        <Suspense fallback={<Loading />}>
+          <Videosmusicales videosmusicalesRef={props.videosmusicalesRef} />
+        </Suspense>
+        <Suspense fallback={<Loading />}>
+          <Podcast podcastRef={props.podcastRef} />
+        </Suspense>
+        <Suspense fallback={<Loading />}>
+          <NuestroProceso nuestroprocesoRef={props.nuestroprocesoRef} />
+        </Suspense>
+        <Suspense fallback={<Loading />}>
+          {" "}
+          <Contactanos contactanosRef={props.contactanosRef} />
+        </Suspense>
       </Alltheboxes>
     </>
   );

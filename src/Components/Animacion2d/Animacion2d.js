@@ -17,6 +17,8 @@ import Manray_Animacion2D_Apachesjpg from "../../img/May/Manray_Animacion2D_Apac
 import Manray_Animacion2D_Apachesgif from "../../img/May/Manray_Animacion2D_Apaches.gif";
 import Manray_Animacion2D_Mestenopng from "../../img/May/Manray_Animacion2D_Mesteno.png";
 import Manray_Animacion2D_Mestenogif from "../../img/May/Manray_Animacion2D_Mesteno.gif";
+import ManrayAnimacionMobile from "../../img/June/Manray_Animacion2D_Mesteno.png";
+import ManrayAnimacionMobile2 from "../../img/June/Manray_Animacion2D_Apaches.png";
 
 const Animacion2d = ({ animacionRef }) => {
   return (
@@ -40,6 +42,7 @@ const Animacion2d = ({ animacionRef }) => {
               marginImagenSpots={"0 0 29px auto"}
               marginImagenSpotsMobile={"0 0 10px auto"}
               minHeightSpecificMobile={"117px"}
+              imgmobile={ManrayAnimacionMobile}
             />
             <DiferenteParagraph>
               <Montserrat500white1444>
@@ -58,6 +61,7 @@ const Animacion2d = ({ animacionRef }) => {
               marginImagenSpots={"0 0 29px auto"}
               marginImagenSpotsMobile={"0 0 10px auto"}
               minHeightSpecificMobile={"140px"}
+              imgmobile={ManrayAnimacionMobile2}
             />
           </div>
         </GridAnimation2d>

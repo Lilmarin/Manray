@@ -12,12 +12,9 @@ export const NavBarContainer = styled.div`
   @media (max-width: 1100px) {
     transition: 0.4s all ease-in;
     width: ${({ click }) => (click ? "47%" : "25%")};
-    height: ${({ click }) => (click ? "70vh" : "120vh")};
+    height: ${({ click }) => (click ? "70vh" : "16vh")};
     padding: 35px 15px 10px 15px;
-    background: ${({ click }) =>
-      click
-        ? "#000000"
-        : "linear-gradient(to left, transparent 0%, black 100%)"};
+    background: ${({ click }) => (click ? "#000000" : "none")};
   }
 `;
 export const StyledLogotipe = styled.div`
