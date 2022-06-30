@@ -93,7 +93,7 @@ const Formulario = () => {
     try {
       const config = {
         method: "post",
-        url: "http://new.manrayfilms.com/submit",
+        url: "https://new.manrayfilms.com/submit",
         headers: {
           "Content-Type": "application/json",
         },

@@ -23,7 +23,6 @@ import {
   NothingContentdiv,
 } from "./Footer.elements";
 import manray_logofooter from "../../img/May/manray_footer.png";
-import avisodeprivacidad from "../../img/May/manray_footer.png";
 
 const Footer = () => {
   return (
@@ -165,7 +164,10 @@ const Footer = () => {
                   <strong>LINKS</strong>
                   <br />
                   <br />
-                  <a style={{ color: "#ffffff" }} href="#">
+                  <a
+                    style={{ color: "#ffffff" }}
+                    href="https://manrayfilms.com/AvisodePrivacidad-Manray.pdf"
+                  >
                     Aviso de privacidad
                   </a>
                 </Montserrat500white12>
@@ -179,7 +181,10 @@ const Footer = () => {
             <Montserrat500white14>
               2022 Manray. Todos los derechos reservados.
               {/* eslint-disable-next-line */}
-              <a style={{ color: "#ffffff" }} href={avisodeprivacidad}>
+              <a
+                style={{ color: "#ffffff" }}
+                href="https://manrayfilms.com/AvisodePrivacidad-Manray.pdf"
+              >
                 Aviso de privacidad
               </a>
             </Montserrat500white14>
