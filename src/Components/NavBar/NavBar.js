@@ -41,7 +41,7 @@ const NavBar = (props) => {
             </svg>
           </IconLogoHamburger>
           <Menu click={click}>
-            <NavLink to="/">
+            <NavLink to="#">
               <MenuItem onClick={() => ChangeClick()}>Home</MenuItem>
             </NavLink>
             <NavLink

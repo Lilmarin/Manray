@@ -58,7 +58,7 @@ const Podcast = ({ podcastRef }) => {
             <ImagenSpots
               urlJpg={Manray_PodcastYTV_CoctelDonJacintojpg}
               urlGif={Manray_PodcastYTV_CoctelDonJacintogif}
-              minHeightSpecific={"329px"}
+              minHeightSpecific={"270px"}
               widthSpecific={"100%"}
               marginImagenSpots={"0 0 29px auto"}
               marginImagenSpotsMobile={"0 0 10px auto"}

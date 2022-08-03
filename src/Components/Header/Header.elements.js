@@ -2,6 +2,18 @@ import styled from "styled-components";
 import ImgJpg from "../../img/May/Manray_Header.jpg";
 import ImgGif from "../../img/May/Manray_Header.gif";
 
+export const HeaderContainer2 = styled.div`
+  width: 100%;
+  position: relative;
+  min-height: 100vh;
+  top: 0;
+  margin: 0;
+  z-index: 50;
+  @media (max-width: 600px) {
+    min-height: 30vh;
+  }
+`;
+
 export const HeaderContainer = styled.div`
   position: relative;
   min-height: 100vh;
@@ -38,6 +50,7 @@ export const TextTop = styled.div`
   right: 3.5%;
   text-align: right;
   align-items: right;
+  z-index: 100;
   @media (max-width: 1100px) {
     display: none;
   }
