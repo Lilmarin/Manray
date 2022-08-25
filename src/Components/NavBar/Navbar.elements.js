@@ -21,6 +21,8 @@ export const StyledLogotipe = styled.div`
   z-index: 101;
   position: relative;
   background-color: #000000;
+  margin: 0 auto 0 10px;
+  max-width: 100px;
   @media (max-width: 1100px) {
     background-color: transparent;
   }

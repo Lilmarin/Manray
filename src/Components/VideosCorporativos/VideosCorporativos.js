@@ -4,7 +4,7 @@ import {
   ImagenSpots,
   Montserrat500white14,
   Montserrat800white114,
-  Montserrat900white110,
+  RedHatDisplay4,
   StrokedText,
 } from "../General.elements";
 import {
@@ -36,9 +36,9 @@ const VideosCorporativos = ({ videoscorporativosRef }) => {
         <VideosCorporativosTitle>
           <Montserrat800white114>VIDEOS</Montserrat800white114>
           <ParagraphVideosText>
-            <Montserrat900white110>
+            <RedHatDisplay4>
               <StrokedText>CORPORATIVOS</StrokedText>
-            </Montserrat900white110>
+            </RedHatDisplay4>
           </ParagraphVideosText>
         </VideosCorporativosTitle>
         <GridVideosCorporativos>

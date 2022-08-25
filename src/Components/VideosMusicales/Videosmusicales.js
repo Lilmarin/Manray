@@ -3,8 +3,8 @@ import {
   ContainerNoventa,
   ImagenSpots,
   Montserrat800white13833,
-  Montserrat900white7133,
   StrokedText,
+  RedHatDisplay71,
 } from "../General.elements";
 import {
   ContainerGridIndividual,
@@ -23,9 +23,9 @@ const Videosmusicales = ({ videosmusicalesRef }) => {
           <ContainerGridIndividual>
             <Montserrat800white13833>VIDEOS</Montserrat800white13833>
             <MusicalesContent>
-              <Montserrat900white7133>
+              <RedHatDisplay71>
                 <StrokedText>MUSICALES</StrokedText>
-              </Montserrat900white7133>
+              </RedHatDisplay71>
             </MusicalesContent>
           </ContainerGridIndividual>
           <ContainerGridIndividual>

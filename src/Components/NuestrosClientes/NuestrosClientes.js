@@ -2,7 +2,7 @@ import React from "react";
 import {
   Montserrat500white14OurClients,
   Montserrat500white14OurClients2,
-  Montserrat900white96,
+  RedHatDisplay3,
   StrokedText,
 } from "../General.elements";
 import {
@@ -19,9 +19,9 @@ const NuestrosClientes = () => {
     <>
       <NuestrosClientesContainer>
         <TitleContentClients>
-          <Montserrat900white96>
+          <RedHatDisplay3>
             <StrokedText>NUESTROS CLIENTES</StrokedText>
-          </Montserrat900white96>
+          </RedHatDisplay3>
           <ParagraphContentClients>
             <Montserrat500white14OurClients>
               Llevamos mas de 8 años generando una conexión entre tu proyectos y

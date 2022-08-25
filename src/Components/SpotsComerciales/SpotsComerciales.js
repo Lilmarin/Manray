@@ -1,7 +1,7 @@
 import React from "react";
 import {
   Montserrat400white16,
-  Montserrat900white96,
+  RedHatDisplay3,
   StrokedText,
   ImagenSpots,
 } from "../General.elements";
@@ -33,13 +33,13 @@ const SpotsComerciales = ({ spotscomercialesRef }) => {
     <>
       <SpotsComercialesContainer ref={spotscomercialesRef}>
         <TitleSpots>
-          <Montserrat900white96>
+          <RedHatDisplay3>
             <StrokedText style={{ textTransform: "uppercase" }}>
               Spots
               <br />
               <SpanComerciales>Comerciales</SpanComerciales>
             </StrokedText>
-          </Montserrat900white96>
+          </RedHatDisplay3>
         </TitleSpots>
         <GridSpotsComerciales>
           <div>

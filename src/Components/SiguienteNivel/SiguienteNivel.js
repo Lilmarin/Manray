@@ -3,7 +3,7 @@ import {
   Montserrat500white14,
   Montserrat500white1422,
   Montserrat600white22,
-  Montserrat800white4822,
+  RedHatDisplay48,
 } from "../General.elements";
 import {
   BotomTextsNextLevel,
@@ -22,10 +22,10 @@ const SiguienteNivel = () => {
       <SiguienteNivelContainer>
         <SiguienteNivelContenido>
           <WeUnderstand>
-            <Montserrat800white4822>
+            <RedHatDisplay48>
               Entendemos tu idea y la llevamos al siguiente
               <TextSpanStrock className="CustomText">NIVEL</TextSpanStrock>
-            </Montserrat800white4822>
+            </RedHatDisplay48>
 
             <hr style={{ marginTop: "10px" }} />
             <BotomTextsNextLevel>

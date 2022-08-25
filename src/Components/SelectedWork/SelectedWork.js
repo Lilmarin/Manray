@@ -3,7 +3,7 @@ import {
   Montserrat500white14,
   Montserrat700white12122,
   Montserrat400white16,
-  Montserrat900white88,
+  RedHatDisplay2,
   StrokedText,
 } from "../General.elements";
 import {
@@ -44,11 +44,9 @@ const SelectedWork = ({ selectedworkRef }) => {
               strokeWidth="1.75515"
             />
           </svg>
-          <Montserrat900white88
-            style={{ textAlign: "right", marginTop: "-.5em" }}
-          >
+          <RedHatDisplay2 style={{ textAlign: "right", marginTop: "-.5em" }}>
             <StrokedText> WORK</StrokedText>
-          </Montserrat900white88>
+          </RedHatDisplay2>
         </SelectedWorkTitle>
         <SelectedWorkParagraph className="SelectedWorkParagraph-Container">
           <SelectedWorkNew>

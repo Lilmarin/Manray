@@ -3,9 +3,9 @@ import {
   ContainerNoventa,
   Montserrat500white1444,
   Montserrat600white138,
-  Montserrat900white249,
   StrokedText,
   ImagenSpots,
+  RedHatDisplay249,
 } from "../General.elements";
 import {
   Animacion2dContainer,
@@ -27,9 +27,9 @@ const Animacion2d = ({ animacionRef }) => {
         <Animacion2dContainer>
           <Montserrat600white138>Animación</Montserrat600white138>
           <ContainertitleStroked>
-            <Montserrat900white249>
+            <RedHatDisplay249>
               <StrokedText>2D</StrokedText>
-            </Montserrat900white249>
+            </RedHatDisplay249>
           </ContainertitleStroked>
         </Animacion2dContainer>
         <GridAnimation2d>

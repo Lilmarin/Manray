@@ -53,6 +53,23 @@ export const Montserrat800white4822 = styled.p`
   }
 `;
 
+export const RedHatDisplay48 = styled.p`
+  font-family: "Red Hat Display";
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 63px;
+  text-transform: uppercase;
+  vertical-align: Top;
+  color: #ffffff;
+  margin-left: 33px;
+  margin-bottom: 0.5em;
+  @media (max-width: 1100px) {
+    font-size: 1.35em;
+    line-height: 1.2em;
+    margin-left: 0px;
+  }
+`;
+
 export const Montserrat600white22 = styled.p`
   font-family: Montserrat;
   font-weight: 600;
@@ -221,6 +238,19 @@ export const Montserrat900white88 = styled.p`
     line-height: 1.15em;
   }
 `;
+
+export const RedHatDisplay2 = styled.p`
+  font-size: 88px;
+  color: #ffffff;
+  font-family: "Red Hat Display";
+  font-weight: 900;
+  line-height: 101px;
+  @media (max-width: 1100px) {
+    font-size: 2.8em;
+    line-height: 1.15em;
+  }
+`;
+
 export const Montserrat900white8866 = styled.p`
   font-size: 65px;
   color: #ffffff;
@@ -304,7 +334,22 @@ export const Montserrat900white96 = styled.p`
   color: #ffffff;
   font-family: "Montserrat";
   font-weight: 900;
-  line-height: 101px;
+  line-height: 100px;
+  @media (max-width: 1100px) {
+    font-size: 80px;
+    line-height: 1.1em;
+  }
+  @media (max-width: 800px) {
+    font-size: 38px;
+  }
+`;
+
+export const RedHatDisplay3 = styled.p`
+  font-size: 96px;
+  color: #ffffff;
+  font-family: "Red Hat Display";
+  font-weight: 900;
+  line-height: 90px;
   @media (max-width: 1100px) {
     font-size: 80px;
     line-height: 1.1em;
@@ -342,6 +387,21 @@ export const Montserrat900white110 = styled.p`
   font-size: 110px;
   color: #ffffff;
   font-family: "Montserrat";
+  font-weight: 900;
+  line-height: 112px;
+  @media (max-width: 1100px) {
+    font-size: 75px;
+    line-height: 80px;
+  }
+  @media (max-width: 600px) {
+    font-size: 2.5em;
+    line-height: 1.2em;
+  }
+`;
+export const RedHatDisplay4 = styled.p`
+  font-size: 110px;
+  color: #ffffff;
+  font-family: "Red Hat Display";
   font-weight: 900;
   line-height: 112px;
   @media (max-width: 1100px) {
@@ -399,7 +459,17 @@ export const Montserrat900white249 = styled.p`
     line-height: 1.2em;
   }
 `;
-
+export const RedHatDisplay249 = styled.p`
+  font-size: 249px;
+  color: #ffffff;
+  font-family: "Red Hat Display";
+  font-weight: 900;
+  line-height: 100px;
+  @media (max-width: 1100px) {
+    font-size: 5em;
+    line-height: 1.2em;
+  }
+`;
 export const Montserrat800white138 = styled.p`
   font-family: "Montserrat";
   font-weight: 800;
@@ -441,6 +511,19 @@ export const Montserrat900white71 = styled.p`
 
 export const Montserrat900white7133 = styled.p`
   font-family: "Montserrat";
+  font-weight: 900;
+  font-size: 71px;
+  line-height: 73px;
+  text-transform: uppercase;
+  color: #ffffff;
+  @media (max-width: 1100px) {
+    font-size: 1.75em;
+    line-height: 1.1em;
+  }
+`;
+
+export const RedHatDisplay71 = styled.p`
+  font-family: "Red Hat Display";
   font-weight: 900;
   font-size: 71px;
   line-height: 73px;
