@@ -1,14 +1,17 @@
 import styled from "styled-components";
 
 export const CuerpoContenido = styled.div`
-  margin-left: 12%;
-  width: 88%;
+  padding-left: 12%;
+  width: 100%;
+  max-width: 1440px;
+  margin: auto;
   @media (max-width: 900px) {
-    margin-left: 18%;
-    width: 82%;
+    padding-left: 18%;
+    width: 100%;
+    margin: 0;
   }
   @media (max-width: 600px) {
-    margin-left: 0%;
+    padding-left: 0%;
     width: 100%;
     margin: 0em;
   }
